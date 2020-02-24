@@ -235,8 +235,29 @@ namespace Project_FinchControl
             }
 
             finchRobot.noteOff();
+            string userResponse;
 
+            Console.Write("\tWhich color would you like to illumiate the Finch with? (Red, Green, or Blue): ");
+            userResponse = Console.ReadLine();
 
+            if (userResponse == "red")
+            {
+                finchRobot.setLED(255, 0, 0);
+                finchRobot.wait(3000);
+                finchRobot.setLED(0, 0, 0);
+            }
+            if (userResponse == "blue")
+            {
+                finchRobot.setLED(0, 0, 255);
+                finchRobot.wait(3000);
+                finchRobot.setLED(0, 0, 0);
+            }
+            if (userResponse == "green")
+            {
+                finchRobot.setLED(0, 255, 0);
+                finchRobot.wait(3000);
+                finchRobot.setLED(0, 0, 0);
+            }
 
             DisplayMenuPrompt("Talent Show Menu");
         }
