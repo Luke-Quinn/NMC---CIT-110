@@ -356,7 +356,7 @@ namespace Project_FinchControl
             {
                 Console.WriteLine("\tThanks for Dancing with the Finch Robot!");
                 Console.WriteLine();
-                DisplayMenuPrompt("\tTalent Show Menu");
+                
             } 
                    
 
@@ -402,6 +402,7 @@ namespace Project_FinchControl
             myFinch.setMotors(-200, -200);
             myFinch.wait(1000);
             myFinch.setMotors(0, 0);
+            myFinch.setLED(0, 0, 0);
 
 
 
