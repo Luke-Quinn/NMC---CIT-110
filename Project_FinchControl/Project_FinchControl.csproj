@@ -51,7 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\CIT_110_QUINN_Talent_Show.cs" />
+    <Compile Include="..\CIT_110_QUINN_DataRecorder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
