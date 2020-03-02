@@ -8,14 +8,14 @@ namespace Project_FinchControl
 
     // **************************************************
     //
-    // Title: Finch Control - Talent Show
+    // Title: Finch Control - Mission 3
     // Description: A program designed to showcase the finch 
     //              and all that it can do at the very most
     //              basic level. Lights, sounds, and movement
     // Application Type: Console
     // Author: Quinn, Luke
     // Dated Created: 2/22/2020
-    // Last Modified: 2/23/2020
+    // Last Modified: 3/1/2020
     //
     // **************************************************
 
@@ -456,7 +456,7 @@ namespace Project_FinchControl
             string menuChoice;
             int numberOfDataPoints = 0;
             double frequencyOfDataPoints = 0;
-
+            double sum = 0;
             double[] temperatures = null;         
 
 
@@ -563,12 +563,14 @@ namespace Project_FinchControl
             }
 
 
+            
 
+            
         }
 
         static double [] DataRecorderDisplayGetData(int numberOfDataPoints, double frequencyOfDataPoints, Finch finchRobot)
         {
-            double[] temperatures = new double[numberOfDataPoints];
+            double[] temperatures = new double[numberOfDataPoints]; // Instatiating a new array
             DisplayScreenHeader("\tGet Temperatures");
 
             Console.WriteLine($"\tNumber of Temperatures: {numberOfDataPoints}");
@@ -644,6 +646,7 @@ namespace Project_FinchControl
 
         }
 
+       
         #endregion
 
         #region FINCH ROBOT MANAGEMENT
